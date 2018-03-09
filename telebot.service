@@ -1,0 +1,8 @@
+[Unit]
+Description= Telegram bot
+
+[Service]
+Type=forking
+ExecStart=/usr/local/twofive/telebot/telebot.sh start
+ExecReload=/usr/local/twofive/telebot/telebot.sh reload
+ExecStop=/usr/local/twofive/telebot/telebot.sh stop
